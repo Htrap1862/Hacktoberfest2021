@@ -74,5 +74,5 @@ function log_ (arr) { //for better distinction
 }
 log_(testBoard);
 console.log(`\n`);
-bruh.solve(testBoard);
+solve(testBoard);
 log_(testBoard);
