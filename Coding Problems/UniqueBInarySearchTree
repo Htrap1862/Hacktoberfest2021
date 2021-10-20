@@ -1,0 +1,18 @@
+int Solution::numTrees(int A) 
+{
+       int BS[A+2];
+    memset(BS, 0, sizeof(S));
+    
+    BS[0] = 1, BS[1] = 1;
+    
+    for(auto i=2; i<=A; i++)
+    {
+        for(auto j=1; j<=i; j++)
+        {
+            BS[i] += (BS[j-1] * BS[i-j]);
+        }
+    }
+    
+    return BS[A];
+    
+}
