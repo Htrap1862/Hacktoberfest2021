@@ -1,0 +1,54 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long int lli;
+#define pb push_back
+const lli mod=1e9+7;
+const lli N=100005;
+vector<int>v[N];
+lli val[N];
+lli xor_arr[N];
+lli cnt=0;
+bool vis[N];
+
+typedef pair<int, int> pairs;
+
+
+
+
+
+int main()
+{
+	// #ifndef ONLINE_JUDGE
+ //    freopen("input.txt", "r" ,stdin);
+ //    freopen("output.txt","w" ,stdout);
+ //    #endif
+
+   
+
+
+
+lli n;
+ cin >> n;
+ vector<lli>a(n);
+ for (int i = 0; i < n; ++i)
+ {
+  cin >> a[i];
+ }
+
+ lli ans=INT_MIN;
+ lli sum=0;
+ for (int i = 0; i < n; ++i)
+ {
+  sum+=a[i];
+  ans=max(ans,sum);
+  if(sum<0)sum=0;
+ }
+ cout << ans <<endl;
+
+ 
+
+
+
+
+return 0;
+}
